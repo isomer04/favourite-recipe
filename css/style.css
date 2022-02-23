@@ -1,103 +1,63 @@
 body {
-    background-color: steelblue;
-    background-color: indianred;
-    background-image: url("../images/background.gif");
-    background-size: cover;
+    /* background-color: rgb(185, 184, 184); */
+    /* color: linear-gradient(to right, #ffe359 0%, #fff2ac 100%) */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
 
-    color: rgb(10, 10, 10);
-    font-size: 20;
-    font-family: 'Supermercado One', cursive;
+}
+
+/* li {
+    list-style: none;
+} */
+
+.container {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+}
+
+.container div {
+    /* background-color: #c4c3c3; */
+    margin: 4px;
+    padding: 2px;
+    flex: 1;
+    text-align: justify;
+}
+
+.container div img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+
+}
+
+.jumImg {
+    background-position: center center;
+    background-size: cover;
+    font-style: italic;
+    text-align: center;
+    color: rgb(27, 6, 75);
+
+
 }
 
 
-.container h1{
+.footer {
+    background-color: rgb(68, 68, 68);
+    height: 40px;
     text-align: center;
 }
 
-.container {
-    background-color: rgba(228, 242, 228, 0.9);
-    padding: 15px;
-    border: 5px solid #ccc;
-    width: 60%; 
-    max-width: 600px;
-    margin: 10% auto;
-    /* text-align: center; */
-    /* align-content: center; */
-}
-
-.frmReg{
-    margin-top: 35px;
-    margin: auto;
-    width: 400px;
-    animation: fadeIn 2s;
-
-
-}
-
-.frmReg div{
-    margin: 25px;
-
-}
-
-.frmReg label{
-    width: 120px;
-    display: inline-block;
-}
-
-.frmReg button {
-    padding: 4px 12px;
-}
-
-#btnSubmit{
-    background-color: darkgreen;
+.footer p {
+    padding: 1%;
+    padding-bottom: 0;
     color: white;
-    font-size: 1.1em
-}
-
-
-#btnCancel{
-    background-color: white;
-    color: darkred;
-    font-size: 1.1em
-}
-
-input, button {
-    font-family: 'Supermercado One', cursive;
-
-}
-
-input {
-    font-size: 1em;
-}
-
-button {
-    margin: 10px;
-}
-
-.submission {
-    text-align: right;
-}
-
-@keyframes fadeIN{
-    from{ opacity: 0;}
-    to{
-        opacity: 1;
-    }
 }
 
 
 
-@media screen and (max-width: 630px) {
-    .frmReg label {
-        width: 95%;
-
-    }
-
-    .submission {
-        text-align: left;
-    }
-    
+@media screen and (max-width:650px){
+    .container{
+        flex-direction: column;
+    }    
 }
-
-
-
